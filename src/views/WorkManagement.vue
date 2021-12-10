@@ -67,7 +67,7 @@
               </b-col>
             </b-row>
             <line-chart
-              :height="350"
+              :height="500"
               ref="bigChart"
               :chart-data="bigLineChart.chartData"
               :extra-options="bigLineChart.extraOptions"
@@ -163,6 +163,7 @@ export default {
           datasets: [
             {
               label: "Data",
+              borderColor: "#bae755",
               data: responseData.map((item) => item.data),
             },
             {
